@@ -101,7 +101,7 @@ BEGIN
 		PRINT 'Inserting data into: bronze.erp_loc_a101 table';
 
 		BULK INSERT bronze.erp_loc_a101
-		FROM 'C:\Users\eBay\Downloads\sql-data-warehouse-project\datasets\source_erp\CUST_AZ12.csv'
+		FROM 'C:\Users\eBay\Downloads\sql-data-warehouse-project\datasets\source_erp\LOC_A101.csv'
 		WITH (
 			FIRSTROW = 2,
 			FIELDTERMINATOR =',',
@@ -112,14 +112,14 @@ BEGIN
 		PRINT '>>load duration:bronze.erp_loc_a101 table ' + CAST ( DATEDIFF(SECOND ,@START_TIME,@END_TIME) AS NVARCHAR ) +' seconds';
 	
 
-		Print'>> >> Truncating Table : bronze.erp_loc_az12';
+		Print'>> >> Truncating Table : bronze.erp_cust_az12';
 		SET @START_TIME = GETDATE();
 		TRUNCATE TABLE bronze.erp_loc_az12
 
 		PRINT 'Inserting data into: bronze.erp_loc_az12 table';
 
 		BULK INSERT bronze.erp_loc_az12
-		FROM 'C:\Users\eBay\Downloads\sql-data-warehouse-project\datasets\source_erp\LOC_A101.csv'
+		FROM 'C:\Users\eBay\Downloads\sql-data-warehouse-project\datasets\source_erp\CUST_AZ12.csv'
 		WITH (
 			FIRSTROW = 2,
 			FIELDTERMINATOR =',',
@@ -169,5 +169,3 @@ END
 
 
 EXEC bronze.load_bronze
-
-
