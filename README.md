@@ -77,7 +77,7 @@ data-warehouse-project/
 ---
 
 The dashboard link : https://public.tableau.com/app/profile/akilapa.idris5302/viz/SuperMartSalesOverview/SuperMartSalesOverview
-<img src="https://res.cloudinary.com/olumuyiwaray/image/upload/v1763469331/kpi_zsgycq.jpg" alt="">
+<img src="https://res.cloudinary.com/olumuyiwaray/image/upload/v1763470083/dash_xwmltn.jpg" alt="">
 
 ## 🛡️ License
 
